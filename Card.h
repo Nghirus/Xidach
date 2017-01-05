@@ -10,10 +10,12 @@ class Card
 {
 public:
 	Card();
-	Card(const string& newFace, const string& newSuit);
+	Card(const string& newFace, const string& newSuit, int newPoint);
+	int getValue() const;
 	void printCard() const;
 private:
 	string face;
 	string suit;
+	int point;
 };
 #endif // CARD_H
