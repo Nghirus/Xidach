@@ -15,6 +15,7 @@ class CardDeck
 public:
 	CardDeck();
 	void shuffle();
+	Card dealTopCard();
 	void printDeck() const;
 private:
 	vector<Card> deck;

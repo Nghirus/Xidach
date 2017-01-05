@@ -10,6 +10,16 @@ CardDeck::CardDeck()
 	
 }
 
+Card CardDeck::dealTopCard()
+{
+	Card result;
+	result = deck.back();
+	deck.pop_back();
+	cardInDeck--;
+	
+	return result;
+}
+
 void CardDeck::printDeck() const
 {
 	for (int count = 0; count < cardInDeck; count++)
