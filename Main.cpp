@@ -16,7 +16,8 @@ int main()
 	Hand NewHand;
 
 	NewDeck.shuffle();
-
+	NewHand.draw(NewDeck);
+	NewHand.draw(NewDeck);
 	displayMenu(NewHand);
 	processChoice(NewHand, NewDeck);
 
@@ -29,7 +30,6 @@ int main()
 void displayMenu(Hand& playingHand)
 {
 	cout << "\n*** XIDACH ***\n";
-	playingHand.printHandValue();
 	cout << "\nSelect one of the following:\n\n";
 	cout << " Your Cards: " << endl;
 	playingHand.printHand();
