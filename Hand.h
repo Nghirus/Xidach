@@ -10,6 +10,7 @@ class Hand
 public:
 	Hand();
 	void draw(CardDeck& deckToDraw);
+	int getHandValue() const;
 	void printHandValue() const;
 	void printHand() const;
 private:

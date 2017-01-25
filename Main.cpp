@@ -59,8 +59,8 @@ void processChoice(Hand &playingHand, CardDeck& playingDeck)
 			break;
 
 		case 2:
-			cout << "Cool";
-
+			if (playingHand.getHandValue() > 21)
+				cout << "Ya busted. " << endl;
 			break;
 
 		default:

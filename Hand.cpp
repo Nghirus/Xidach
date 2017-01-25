@@ -20,6 +20,10 @@ void Hand::draw(CardDeck& deck)
 	cardInHand++;
 }
 
+int Hand::getHandValue() const
+{
+	return handValue;
+}
 void Hand::printHandValue() const
 {
 	cout << "Hand Value: " << handValue;
