@@ -1,5 +1,7 @@
 #include <iostream>
 #include <ctime>
+#include <Windows.h>
+
 #include "Card.h"
 #include "CardDeck.h"
 #include "Hand.h"
@@ -10,7 +12,8 @@ void processChoice(Hand& playingHand, CardDeck& playingDeck);
 
 int main()
 {
-	srand(time(0));
+	SetConsoleTitle("Xidach by Nghi");
+	srand((unsigned int)time(0));
 
 	CardDeck NewDeck;
 	Hand NewHand;

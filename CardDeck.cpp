@@ -6,7 +6,7 @@ CardDeck::CardDeck()
 	cardInDeck = NUMOFCARDS;
 	
 	for (int count = 0; count < NUMOFCARDS; count++)
-		deck.push_back(Card(FACE[count % 13], SUIT[count / 13], POINT[count % 13]));
+		deck.push_back(Card(FACE[count % 13], SUIT[count / 13], VALUE[count % 13]));
 	
 }
 
